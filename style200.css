@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== Base Theme ===== */
+body {
+  background-color: #000;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #00bcd4;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #00bcd4;
+  object-fit: cover;
+  filter: brightness(1.15) contrast(1.1);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.profile-pic:hover {
+  filter: brightness(1.25) contrast(1.2) saturate(1.1);
+  box-shadow: 0 0 25px #00bcd4;
+}
+
+.hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero span {
+  color: #00bcd4;
+}
+
+.hero p {
+  color: #aaa;
+  max-width: 700px;
+  margin: 0.5rem auto 0;
+  font-size: 1rem;
+}
+
+/* ===== Section Layout ===== */
+.section {
+  padding: 3.5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  text-align: center;
+  color: #00bcd4;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+/* ===== Cards (Education, Projects) ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+  border-color: #00bcd4;
+}
+
+/* ===== Achievements ===== */
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+  color: #ccc;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Skills Section ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.skill {
+  background-color: #111;
+  border: 1px solid #00bcd4;
+  padding: 0.9rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.skill:hover {
+  background-color: #00bcd4;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* ===== About Me ===== */
+#about p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #aaa;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+footer a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+.edu-pics {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.pic-card {
+  text-align: center;
+}
+
+.pic-card img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.pic-card img:hover {
+  transform: scale(1.05);
+}
+
+.pic-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc; /* light color for dark mode */
+}
+.activities-img {
+  width: 100%;
+  max-width: 200px; /* smaller size */
+  height: auto;
+  border-radius: 12px;
+  margin: 15px auto 0 auto; /* centers the image */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.activities-img:hover {
+  transform: scale(1.05);
+}
